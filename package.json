@@ -1,0 +1,24 @@
+{
+  "name": "scraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "selenium-scrape.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srdjan1210/Bet365Scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srdjan1210/Bet365Scraper/issues"
+  },
+  "homepage": "https://github.com/srdjan1210/Bet365Scraper#readme"
+}
