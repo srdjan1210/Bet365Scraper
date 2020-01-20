@@ -6,9 +6,13 @@ var driver = new webdriver.Builder()
   .forBrowser('chrome')
   .build();
 setPageForLiveData();
+//When running file it will open directly live data page
+//You can set up functions as you want to extract data
 
-//wn-Classification
-//gll-MarketColumnHeader
+//setPageForNormalData and setPageForLiveData are setting pages
+//captureLiveData and captureNormalData are for capturing live and 24 hour games
+
+
 async function setPageForNormalData(){
   await driver.get('https://www.bet365.com/#/IP');  
   await driver.wait(until.elementLocated(By.className('wn-WebNavModule ')));
