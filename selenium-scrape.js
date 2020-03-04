@@ -11,7 +11,7 @@ setPageForLiveData();
 
 //setPageForNormalData and setPageForLiveData are setting pages
 //captureLiveData and captureNormalData are for capturing live and 24 hour games
-
+//hm-MainHeaderCentreWide 
 
 async function setPageForNormalData(){
   await driver.get('https://www.bet365.com/#/IP');  
@@ -97,8 +97,8 @@ console.log(todayGames);
 
 async function setPageForLiveData(){
     await driver.get('https://www.bet365.com/#/IP');  
-    await driver.wait(until.elementLocated(By.className('hm-BigButtons')), 50000);
-    var sports = await driver.findElements(By.className('hm-BigButton'));
+    await driver.wait(until.elementLocated(By.className('hm-MainHeaderCentreWide')), 50000);
+    var sports = await driver.findElements(By.className('hm-MainHeaderCentreWide_Link'));
     for (let sport of sports) {
       if ((await sport.getText()) == "In-Play") {
         await sport.click();
